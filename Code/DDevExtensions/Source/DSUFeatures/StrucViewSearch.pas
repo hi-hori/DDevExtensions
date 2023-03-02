@@ -138,10 +138,10 @@ begin
   FEdit.Align := alTop;
   FEdit.Parent := AParent;
   FEdit.ListBox.Style := lbOwnerDrawFixed;
-  FEdit.ListBox.ItemHeight := 18;
+  FEdit.ListBox.ItemHeight := FEdit.ScaleValue(18);
   FEdit.ListBox.OnDrawItem := DrawItem;
   FEdit.DropDownHeight := FEdit.ListBox.ItemHeight * 32;
-  FEdit.DropDownWidth := 400;
+  FEdit.DropDownWidth := FEdit.ScaleValue(400);
   FEdit.Panel.BorderStyle := bsNone;
   FEdit.Panel.Color := FEdit.Color;
   FEdit.OnChange := EditChange;
